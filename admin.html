@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<!--
+================================================================================
+  GERARD CAFE  |  MENU MANAGER  |  Cyber Pixel (cyberpixel.ae)
+================================================================================
+  Manage categories, items, prices, photos and descriptions.
+  Saves straight to your GitHub repository.
+  لإدارة الأقسام والأصناف والأسعار والصور والوصف، ويحفظ مباشرة إلى GitHub
+
+  SECURITY — READ THIS  |  تنبيه أمني مهم
+  --------------------------------------------------------------------------
+  NEVER type your GitHub token into this file and save it.
+  Enter it in the Settings panel instead. It is kept only in this browser.
+  If a token is ever written into a file and pushed to GitHub, GitHub will
+  detect it and switch it off, and anyone could have used it in the meantime.
+  لا تكتب التوكن داخل الملف أبداً. أدخله في الإعدادات فقط.
+================================================================================
+-->
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gerard Cafe · Menu Manager</title>
+<meta name="robots" content="noindex,nofollow">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--esp:#241A15;--esp2:#31241C;--cream:#F7F1E7;--c2:#EFE5D6;--gold:#C8973F;
+      --deep:#8A6614;--muted:#7C6A5D;--line:rgba(200,151,63,.3);--ok:#1d7a44;--bad:#b3352f}
+*{box-sizing:border-box}
+body{margin:0;background:var(--cream);color:#1A120E;font-family:Cairo,system-ui,sans-serif;font-size:15px;line-height:1.6}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+input,textarea,select{font:inherit;width:100%;padding:9px 11px;border:1px solid var(--line);
+  border-radius:9px;background:#fff;outline:0;color:inherit}
+input:focus,textarea:focus,select:focus{border-color:var(--gold)}
+textarea{min-height:76px;resize:vertical;line-height:1.6}
+label{display:block}
+label>span{display:block;font-size:11.5px;font-weight:700;text-transform:uppercase;
+  letter-spacing:.07em;color:var(--muted);margin-bottom:4px}
+
+/* top bar */
+.bar{position:sticky;top:0;z-index:50;background:var(--esp);color:var(--cream);
+  display:flex;align-items:center;gap:10px;padding:11px 16px;flex-wrap:wrap}
+.bar h1{font-size:16px;margin:0;margin-inline-end:auto;letter-spacing:.04em}
+.btn{background:var(--gold);color:var(--esp);border-radius:999px;padding:9px 18px;font-weight:700;font-size:13.5px}
+.btn:hover{filter:brightness(1.08)}
+.btn.o{background:none;border:1px solid rgba(200,151,63,.55);color:var(--gold)}
+.btn.o:hover{background:rgba(200,151,63,.15)}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.dot{font-size:12px;color:rgba(247,241,231,.6)}
+.dot b{color:var(--gold)}
+
+.wrap{max-width:1200px;margin:auto;padding:18px 16px 90px}
+.panel{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px;margin-bottom:16px}
+.panel h2{font-size:15px;margin:0 0 12px;display:flex;align-items:center;gap:8px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+@media(max-width:700px){.grid2,.grid3{grid-template-columns:1fr}}
+.hide{display:none!important}
+.msg{border-radius:10px;padding:11px 14px;margin-bottom:12px;font-size:14px}
+.msg.e{background:#FDECEA;border:1px solid #F0B3AE;color:var(--bad)}
+.msg.s{background:#E8F6EE;border:1px solid #A9DCC0;color:var(--ok)}
+.msg.i{background:#FFF6E3;border:1px solid #E8CF9A}
+
+/* layout */
+.cols{display:grid;grid-template-columns:250px 1fr;gap:16px;align-items:start}
+@media(max-width:820px){.cols{grid-template-columns:1fr}}
+.side{background:#fff;border:1px solid var(--line);border-radius:14px;padding:10px;position:sticky;top:64px}
+@media(max-width:820px){.side{position:static}}
+.cat{display:flex;align-items:center;gap:8px;padding:9px 10px;border-radius:9px;font-size:13.5px;width:100%;text-align:start}
+.cat:hover{background:var(--c2)}
+.cat.on{background:var(--esp);color:var(--gold)}
+.cat .nm{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cat .ct{font-size:11px;opacity:.65}
+.mv{display:flex;flex-direction:column;gap:1px}
+.mv button{font-size:9px;line-height:1;padding:1px 3px;opacity:.55}
+.mv button:hover{opacity:1}
+
+/* item rows */
+.item{display:flex;gap:12px;padding:12px;border:1px solid var(--line);border-radius:12px;margin-bottom:10px;background:#fff;align-items:flex-start}
+.item.gap{border-color:#E0A96D;background:#FFFBF4}
+.thumb{width:64px;height:64px;border-radius:9px;object-fit:cover;background:var(--c2);flex:none}
+.thumb.ph{display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:10px;text-align:center;padding:4px}
+.it-main{flex:1;min-width:0}
+.it-top{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.it-top b{font-size:14.5px}
+.it-top i{font-style:normal;color:var(--muted);font-size:13px}
+.it-top .pr{margin-inline-start:auto;font-weight:700;color:var(--deep)}
+.it-sub{font-size:12.5px;color:var(--muted);margin-top:2px}
+.it-acts{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.mini{border:1px solid var(--line);border-radius:999px;padding:4px 11px;font-size:12px;font-weight:700;color:var(--muted)}
+.mini:hover{border-color:var(--gold);color:var(--deep)}
+.mini.d:hover{border-color:var(--bad);color:var(--bad)}
+
+/* editor drawer */
+.ov{position:fixed;inset:0;background:rgba(26,18,14,.7);z-index:100;display:none;
+  align-items:flex-start;justify-content:center;padding:20px;overflow-y:auto}
+.ov.on{display:flex}
+.box{background:var(--cream);border-radius:16px;max-width:620px;width:100%;padding:22px;margin:auto}
+.box h3{margin:0 0 14px;font-size:17px}
+.fields{display:grid;gap:12px}
+.prev{display:flex;gap:12px;align-items:center;margin-top:6px}
+.prev img{width:82px;height:82px;object-fit:cover;border-radius:10px;background:var(--c2)}
+.foot{display:flex;gap:8px;justify-content:flex-end;margin-top:18px;flex-wrap:wrap}
+.bar2{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px;align-items:center}
+.bar2 input[type=search]{max-width:260px}
+small.hint{display:block;color:var(--muted);font-size:12px;margin-top:4px;line-height:1.5}
+.spin{display:inline-block;width:13px;height:13px;border:2px solid currentColor;border-right-color:transparent;
+  border-radius:50%;animation:sp .7s linear infinite;vertical-align:-2px}
+@keyframes sp{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+
+<div class="bar">
+  <h1>GERARD CAFE · Menu Manager</h1>
+  <span class="dot" id="dirty"></span>
+  <button class="btn o" id="bSettings">Settings</button>
+  <button class="btn o" id="bDownload">Download</button>
+  <button class="btn" id="bSave" disabled>Save to GitHub</button>
+</div>
+
+<div class="wrap">
+  <div id="msg"></div>
+
+  <!-- SETTINGS -->
+  <div class="panel hide" id="settings">
+    <h2>GitHub connection</h2>
+    <div class="msg i">
+      Create a <b>fine-grained personal access token</b> at
+      github.com → Settings → Developer settings → Personal access tokens.
+      Give it access to <b>only this one repository</b>, with
+      <b>Repository permissions → Contents → Read and write</b>.
+      The token is stored in this browser only. It is never written into any file.
+      <br>التوكن يُحفظ في هذا المتصفح فقط ولا يُكتب داخل أي ملف
+    </div>
+    <div class="grid3">
+      <label><span>Owner (user or org)</span><input id="sOwner" placeholder="my-username"></label>
+      <label><span>Repository</span><input id="sRepo" placeholder="gerard-menu"></label>
+      <label><span>Branch</span><input id="sBranch" placeholder="main"></label>
+    </div>
+    <div class="grid2" style="margin-top:12px">
+      <label><span>Data file path</span><input id="sPath" placeholder="menu-data.json"></label>
+      <label><span>Folder for uploaded photos</span><input id="sImg" placeholder="img"></label>
+    </div>
+    <label style="margin-top:12px"><span>Token</span><input id="sToken" type="password" placeholder="github_pat_..."></label>
+    <div class="foot" style="justify-content:flex-start">
+      <button class="btn" id="bConnect">Save &amp; test connection</button>
+      <button class="btn o" id="bForget">Forget token</button>
+    </div>
+  </div>
+
+  <!-- CAFE SETTINGS -->
+  <div class="panel hide" id="cafe">
+    <h2>Cafe details</h2>
+    <div class="grid2">
+      <label><span>Name (English)</span><input id="cName"></label>
+      <label><span>Name (Arabic)</span><input id="cNameAr" dir="rtl"></label>
+      <label><span>Currency (English)</span><input id="cCur"></label>
+      <label><span>Currency (Arabic)</span><input id="cCurAr" dir="rtl"></label>
+    </div>
+  </div>
+
+  <div class="cols">
+    <!-- CATEGORIES -->
+    <div class="side">
+      <div id="cats"></div>
+      <button class="mini" style="width:100%;margin-top:8px;padding:8px" id="bAddCat">+ Add category</button>
+    </div>
+
+    <!-- ITEMS -->
+    <div>
+      <div class="bar2">
+        <input type="search" id="q" placeholder="Search all items">
+        <select id="fFilter" style="max-width:190px">
+          <option value="">All items</option>
+          <option value="nophoto">Missing a photo</option>
+          <option value="nodesc">Missing a description</option>
+        </select>
+        <button class="mini" id="bAddItem">+ Add item</button>
+        <button class="mini" id="bEditCat">Edit this category</button>
+      </div>
+      <div id="items"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ITEM EDITOR -->
+<div class="ov" id="ovItem"><div class="box">
+  <h3 id="ovTitle">Edit item</h3>
+  <div class="fields">
+    <div class="grid2">
+      <label><span>Name (English)</span><input id="iEn"></label>
+      <label><span>Name (Arabic)</span><input id="iAr" dir="rtl"></label>
+    </div>
+    <div class="grid2">
+      <label><span>Price</span><input id="iP" type="number" step="0.5" min="0"></label>
+      <label><span>Category</span><select id="iCat"></select></label>
+    </div>
+    <label><span>Description (English)</span><textarea id="iD" placeholder="Shown when a guest taps this item."></textarea></label>
+    <label><span>Description (Arabic)</span><textarea id="iDAr" dir="rtl"></textarea></label>
+    <label><span>Photo</span><input id="iImg" placeholder="img/kunafa.jpg  or  https://..."></label>
+    <div class="prev">
+      <img id="iPrev" alt="">
+      <div style="flex:1">
+        <input type="file" id="iFile" accept="image/*">
+        <small class="hint" id="upHint">Choosing a photo shrinks it, uploads it to your repository and fills the box above. Needs the GitHub connection set up first.</small>
+      </div>
+    </div>
+  </div>
+  <div class="foot">
+    <button class="btn o" id="iCancel">Cancel</button>
+    <button class="btn" id="iSave">Apply</button>
+  </div>
+</div></div>
+
+<!-- CATEGORY EDITOR -->
+<div class="ov" id="ovCat"><div class="box">
+  <h3 id="ovCatTitle">Edit category</h3>
+  <div class="fields">
+    <div class="grid2">
+      <label><span>Name (English)</span><input id="kEn"></label>
+      <label><span>Name (Arabic)</span><input id="kAr" dir="rtl"></label>
+    </div>
+    <div class="grid2">
+      <label><span>Id (letters and dashes)</span><input id="kSlug"></label>
+      <label><span>Icon</span><select id="kIcon"></select></label>
+    </div>
+  </div>
+  <div class="foot">
+    <button class="btn o" id="kDelete" style="margin-inline-end:auto;color:var(--bad);border-color:var(--bad)">Delete category</button>
+    <button class="btn o" id="kCancel">Cancel</button>
+    <button class="btn" id="kSave">Apply</button>
+  </div>
+</div></div>
+
+<script>
+(function(){
+"use strict";
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const ICONS=["egg","leaf","burger","pizza","cake","slice","cookie","pancake","kunafa",
+             "icecream","fruit","shake","smoothie","mojito","frappe","juice","bubble","icecoffee","coffee"];
+const LS="gerard_admin_cfg";
+
+let DATA=null, sha=null, cur=0, dirty=false, editing=null, editingCat=null;
+let cfg={owner:"",repo:"",branch:"main",path:"menu-data.json",imgDir:"img",token:""};
+
+/* ---------- helpers ---------- */
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function msg(text,kind){ $("#msg").innerHTML='<div class="msg '+(kind||"i")+'">'+text+'</div>';
+  if(kind==="s") setTimeout(()=>{ if($("#msg .msg.s")) $("#msg").innerHTML=""; },4000); }
+function setDirty(v){ dirty=v; $("#dirty").innerHTML = v?'<b>unsaved changes</b>':'saved';
+  $("#bSave").disabled = !v || !cfg.token; }
+addEventListener("beforeunload",e=>{ if(dirty){e.preventDefault();e.returnValue="";} });
+
+/* UTF-8 safe base64, so Arabic survives the trip to GitHub */
+function b64(str){
+  const bytes=new TextEncoder().encode(str);
+  let bin=""; bytes.forEach(b=>bin+=String.fromCharCode(b));
+  return btoa(bin);
+}
+function unb64(b){
+  const bin=atob(b); const bytes=Uint8Array.from(bin,c=>c.charCodeAt(0));
+  return new TextDecoder().decode(bytes);
+}
+const slugify=s=>String(s).toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"")||"category";
+
+/* ---------- settings ---------- */
+function loadCfg(){
+  try{ Object.assign(cfg, JSON.parse(localStorage.getItem(LS)||"{}")); }catch(e){}
+  $("#sOwner").value=cfg.owner; $("#sRepo").value=cfg.repo; $("#sBranch").value=cfg.branch||"main";
+  $("#sPath").value=cfg.path||"menu-data.json"; $("#sImg").value=cfg.imgDir||"img";
+  $("#sToken").value=cfg.token;
+}
+function saveCfg(){
+  cfg={owner:$("#sOwner").value.trim(),repo:$("#sRepo").value.trim(),
+       branch:($("#sBranch").value.trim()||"main"),path:($("#sPath").value.trim()||"menu-data.json"),
+       imgDir:($("#sImg").value.trim().replace(/^\/|\/$/g,"")||"img"),token:$("#sToken").value.trim()};
+  try{ localStorage.setItem(LS,JSON.stringify(cfg)); }catch(e){}
+  setDirty(dirty);
+}
+
+/* ---------- GitHub ---------- */
+const api=p=>"https://api.github.com/repos/"+cfg.owner+"/"+cfg.repo+p;
+async function gh(path,opts){
+  const r=await fetch(api(path),Object.assign({},opts,{headers:Object.assign({
+    "Authorization":"Bearer "+cfg.token,
+    "Accept":"application/vnd.github+json",
+    "X-GitHub-Api-Version":"2022-11-28"
+  },(opts&&opts.headers)||{})}));
+  if(!r.ok){
+    let d=""; try{ d=(await r.json()).message||""; }catch(e){}
+    throw new Error("GitHub "+r.status+(d?" — "+d:""));
+  }
+  return r.status===204?null:r.json();
+}
+async function getFile(path){
+  try{ return await gh("/contents/"+encodeURI(path)+"?ref="+encodeURIComponent(cfg.branch)); }
+  catch(e){ if(/ 404/.test(e.message)) return null; throw e; }
+}
+async function putFile(path,contentB64,message,prevSha){
+  const body={message:message,content:contentB64,branch:cfg.branch};
+  if(prevSha) body.sha=prevSha;
+  return gh("/contents/"+encodeURI(path),{method:"PUT",body:JSON.stringify(body)});
+}
+
+/* ---------- load data ---------- */
+async function load(){
+  // prefer GitHub (authoritative), fall back to the local file
+  if(cfg.token&&cfg.owner&&cfg.repo){
+    try{
+      const f=await getFile(cfg.path);
+      if(f){ DATA=JSON.parse(unb64(f.content)); sha=f.sha; render();
+        msg("Loaded from GitHub — <b>"+cfg.owner+"/"+cfg.repo+"</b>, branch "+esc(cfg.branch)+".","s"); return; }
+    }catch(e){ msg("Could not read from GitHub: "+esc(e.message)+" — falling back to the local file.","e"); }
+  }
+  try{
+    const r=await fetch("menu-data.json?v="+Date.now(),{cache:"no-store"});
+    if(!r.ok) throw new Error("HTTP "+r.status);
+    DATA=await r.json(); sha=null; render();
+    if(!cfg.token) msg("Loaded the local menu-data.json. Open <b>Settings</b> to connect GitHub before saving.","i");
+  }catch(e){
+    DATA={config:{name:"GERARD CAFE",nameAr:"كافيه جيرارد",currency:"AED",currencyAr:"د.إ"},
+          colours:{},categories:[]};
+    render();
+    msg("No menu-data.json found next to this page. Connect GitHub in <b>Settings</b>, or start a new menu here.","e");
+  }
+}
+
+/* ---------- render ---------- */
+function counts(c){ return c.items.length; }
+function render(){
+  if(!DATA) return;
+  $("#cName").value=DATA.config?.name||""; $("#cNameAr").value=DATA.config?.nameAr||"";
+  $("#cCur").value=DATA.config?.currency||""; $("#cCurAr").value=DATA.config?.currencyAr||"";
+  if(cur>=DATA.categories.length) cur=Math.max(0,DATA.categories.length-1);
+  $("#cats").innerHTML=DATA.categories.map((c,i)=>
+    '<div style="display:flex;align-items:center;gap:4px">'+
+    '<button class="cat'+(i===cur?" on":"")+'" data-i="'+i+'">'+
+      '<span class="nm">'+esc(c.en)+'</span><span class="ct">'+counts(c)+'</span></button>'+
+    '<span class="mv"><button data-up="'+i+'" title="Move up">▲</button>'+
+    '<button data-down="'+i+'" title="Move down">▼</button></span></div>').join("")
+    || '<p style="color:var(--muted);font-size:13px;padding:8px">No categories yet.</p>';
+  $$("#cats .cat").forEach(b=>b.onclick=()=>{cur=+b.dataset.i;render();});
+  $$("#cats [data-up]").forEach(b=>b.onclick=()=>moveCat(+b.dataset.up,-1));
+  $$("#cats [data-down]").forEach(b=>b.onclick=()=>moveCat(+b.dataset.down,1));
+  renderItems();
+}
+function renderItems(){
+  const q=$("#q").value.trim().toLowerCase(), f=$("#fFilter").value;
+  const box=$("#items");
+  if(!DATA.categories.length){ box.innerHTML='<p style="color:var(--muted)">Add a category to begin.</p>'; return; }
+  const searching = q||f;
+  const list=[];
+  DATA.categories.forEach((c,ci)=>{
+    if(!searching && ci!==cur) return;
+    c.items.forEach((it,ii)=>{
+      if(q && !((it.en+" "+it.ar).toLowerCase().includes(q))) return;
+      if(f==="nophoto" && it.img) return;
+      if(f==="nodesc" && (it.d||it.dAr)) return;
+      list.push({c,ci,it,ii});
+    });
+  });
+  box.innerHTML = list.length ? list.map(r=>{
+    const gap=!r.it.img||!(r.it.d||r.it.dAr);
+    return '<div class="item'+(gap?" gap":"")+'">'+
+      (r.it.img?'<img class="thumb" src="'+esc(r.it.img)+'" alt="" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement(\'div\'),{className:\'thumb ph\',textContent:\'broken\'}))">'
+               :'<div class="thumb ph">no photo</div>')+
+      '<div class="it-main"><div class="it-top"><b>'+esc(r.it.en)+'</b><i>'+esc(r.it.ar)+'</i>'+
+      '<span class="pr">'+r.it.p+'</span></div>'+
+      '<div class="it-sub">'+esc(r.c.en)+(searching?"":"")+
+        (r.it.d||r.it.dAr?' · description added':' · <span style="color:#B26A00">no description</span>')+
+        (r.it.img?'':' · <span style="color:#B26A00">no photo</span>')+'</div>'+
+      '<div class="it-acts">'+
+        '<button class="mini" data-edit="'+r.ci+':'+r.ii+'">Edit</button>'+
+        '<button class="mini" data-up2="'+r.ci+':'+r.ii+'">Up</button>'+
+        '<button class="mini" data-down2="'+r.ci+':'+r.ii+'">Down</button>'+
+        '<button class="mini" data-dupe="'+r.ci+':'+r.ii+'">Duplicate</button>'+
+        '<button class="mini d" data-del="'+r.ci+':'+r.ii+'">Delete</button>'+
+      '</div></div></div>';
+  }).join("") : '<p style="color:var(--muted)">Nothing here.</p>';
+
+  const pair=s=>s.split(":").map(Number);
+  $$("#items [data-edit]").forEach(b=>b.onclick=()=>openItem(...pair(b.dataset.edit)));
+  $$("#items [data-up2]").forEach(b=>b.onclick=()=>moveItem(...pair(b.dataset.up2),-1));
+  $$("#items [data-down2]").forEach(b=>b.onclick=()=>moveItem(...pair(b.dataset.down2),1));
+  $$("#items [data-dupe]").forEach(b=>b.onclick=()=>{
+    const [ci,ii]=pair(b.dataset.dupe);
+    const copy=Object.assign({},DATA.categories[ci].items[ii]);
+    copy.en=copy.en+" (copy)";
+    DATA.categories[ci].items.splice(ii+1,0,copy); setDirty(true); renderItems();
+  });
+  $$("#items [data-del]").forEach(b=>b.onclick=()=>{
+    const [ci,ii]=pair(b.dataset.del);
+    if(!confirm('Delete "'+DATA.categories[ci].items[ii].en+'"?')) return;
+    DATA.categories[ci].items.splice(ii,1); setDirty(true); render();
+  });
+}
+function moveCat(i,d){
+  const j=i+d; if(j<0||j>=DATA.categories.length) return;
+  const a=DATA.categories; [a[i],a[j]]=[a[j],a[i]];
+  if(cur===i)cur=j; else if(cur===j)cur=i;
+  setDirty(true); render();
+}
+function moveItem(ci,ii,d){
+  const a=DATA.categories[ci].items, j=ii+d; if(j<0||j>=a.length) return;
+  [a[ii],a[j]]=[a[j],a[ii]]; setDirty(true); renderItems();
+}
+
+/* ---------- item editor ---------- */
+function openItem(ci,ii){
+  editing = (ii===-1) ? {ci,ii:-1,it:{en:"",ar:"",p:0,img:"",d:"",dAr:""}}
+                      : {ci,ii,it:Object.assign({},DATA.categories[ci].items[ii])};
+  $("#ovTitle").textContent = ii===-1 ? "New item" : "Edit item";
+  $("#iEn").value=editing.it.en; $("#iAr").value=editing.it.ar;
+  $("#iP").value=editing.it.p; $("#iD").value=editing.it.d||""; $("#iDAr").value=editing.it.dAr||"";
+  $("#iImg").value=editing.it.img||"";
+  $("#iCat").innerHTML=DATA.categories.map((c,i)=>'<option value="'+i+'"'+(i===ci?" selected":"")+'>'+esc(c.en)+'</option>').join("");
+  preview(); $("#iFile").value="";
+  $("#ovItem").classList.add("on");
+}
+function preview(){ const v=$("#iImg").value.trim(); const im=$("#iPrev");
+  if(v){im.src=v;im.style.display="";} else {im.removeAttribute("src");im.style.display="none";} }
+$("#iImg").addEventListener("input",preview);
+$("#iCancel").onclick=()=>{$("#ovItem").classList.remove("on");editing=null;};
+$("#ovItem").onclick=e=>{if(e.target===$("#ovItem"))$("#iCancel").click();};
+$("#iSave").onclick=()=>{
+  const en=$("#iEn").value.trim();
+  if(!en){alert("The English name is required.");return;}
+  const it={en:en, ar:$("#iAr").value.trim(), p:parseFloat($("#iP").value)||0,
+            img:$("#iImg").value.trim(), d:$("#iD").value.trim(), dAr:$("#iDAr").value.trim()};
+  const target=+$("#iCat").value;
+  if(editing.ii===-1) DATA.categories[target].items.push(it);
+  else if(target===editing.ci) DATA.categories[editing.ci].items[editing.ii]=it;
+  else { DATA.categories[editing.ci].items.splice(editing.ii,1); DATA.categories[target].items.push(it); }
+  cur=target; editing=null; $("#ovItem").classList.remove("on"); setDirty(true); render();
+};
+
+/* ---------- photo upload ---------- */
+function shrink(file,max){
+  return new Promise((res,rej)=>{
+    const img=new Image(), url=URL.createObjectURL(file);
+    img.onload=()=>{
+      URL.revokeObjectURL(url);
+      let {width:w,height:h}=img;
+      if(Math.max(w,h)>max){ const k=max/Math.max(w,h); w=Math.round(w*k); h=Math.round(h*k); }
+      const cv=document.createElement("canvas"); cv.width=w; cv.height=h;
+      cv.getContext("2d").drawImage(img,0,0,w,h);
+      cv.toBlob(b=>b?res(b):rej(new Error("Could not process that image.")),"image/jpeg",.82);
+    };
+    img.onerror=()=>{URL.revokeObjectURL(url);rej(new Error("That file is not a readable image."));};
+    img.src=url;
+  });
+}
+$("#iFile").onchange=async ev=>{
+  const f=ev.target.files[0]; if(!f) return;
+  if(!cfg.token||!cfg.owner||!cfg.repo){
+    alert("Set up the GitHub connection in Settings first, then choose the photo again.");
+    ev.target.value=""; return;
+  }
+  const hint=$("#upHint");
+  try{
+    hint.innerHTML='<span class="spin"></span> Shrinking the photo…';
+    const blob=await shrink(f,1200);
+    const base=(($("#iEn").value.trim()||f.name).toLowerCase()
+      .replace(/\.[a-z0-9]+$/,"").replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"")||"photo");
+    const name=base+"-"+Date.now().toString(36)+".jpg";
+    const path=cfg.imgDir+"/"+name;
+    const b=await blob.arrayBuffer();
+    let bin=""; new Uint8Array(b).forEach(x=>bin+=String.fromCharCode(x));
+    hint.innerHTML='<span class="spin"></span> Uploading to GitHub…';
+    await putFile(path,btoa(bin),"Add photo "+name);
+    $("#iImg").value=path; preview();
+    hint.innerHTML='<b style="color:var(--ok)">Uploaded as '+esc(path)+'</b> ('+Math.round(blob.size/1024)+' KB). Press Apply, then Save to GitHub.';
+  }catch(e){
+    hint.innerHTML='<b style="color:var(--bad)">Upload failed: '+esc(e.message)+'</b>';
+  }
+  ev.target.value="";
+};
+
+/* ---------- category editor ---------- */
+function openCat(i){
+  editingCat = (i===-1) ? {i:-1,c:{slug:"",icon:"coffee",en:"",ar:"",items:[]}}
+                        : {i,c:Object.assign({},DATA.categories[i])};
+  $("#ovCatTitle").textContent = i===-1?"New category":"Edit category";
+  $("#kEn").value=editingCat.c.en; $("#kAr").value=editingCat.c.ar;
+  $("#kSlug").value=editingCat.c.slug;
+  $("#kIcon").innerHTML=ICONS.map(n=>'<option value="'+n+'"'+(n===editingCat.c.icon?" selected":"")+'>'+n+'</option>').join("");
+  $("#kDelete").style.display = i===-1?"none":"";
+  $("#ovCat").classList.add("on");
+}
+$("#kEn").addEventListener("input",()=>{ if(editingCat&&editingCat.i===-1) $("#kSlug").value=slugify($("#kEn").value); });
+$("#kCancel").onclick=()=>{$("#ovCat").classList.remove("on");editingCat=null;};
+$("#ovCat").onclick=e=>{if(e.target===$("#ovCat"))$("#kCancel").click();};
+$("#kSave").onclick=()=>{
+  const en=$("#kEn").value.trim(); if(!en){alert("The English name is required.");return;}
+  let slug=slugify($("#kSlug").value||en);
+  const clash=DATA.categories.some((c,i)=>c.slug===slug && i!==editingCat.i);
+  if(clash) slug=slug+"-"+Date.now().toString(36).slice(-4);
+  const c={slug,icon:$("#kIcon").value,en,ar:$("#kAr").value.trim(),
+           items: editingCat.i===-1?[]:DATA.categories[editingCat.i].items};
+  if(editingCat.i===-1){ DATA.categories.push(c); cur=DATA.categories.length-1; }
+  else DATA.categories[editingCat.i]=c;
+  editingCat=null; $("#ovCat").classList.remove("on"); setDirty(true); render();
+};
+$("#kDelete").onclick=()=>{
+  const c=DATA.categories[editingCat.i];
+  if(!confirm('Delete "'+c.en+'" and its '+c.items.length+' item(s)? This cannot be undone.')) return;
+  DATA.categories.splice(editingCat.i,1); editingCat=null;
+  $("#ovCat").classList.remove("on"); cur=0; setDirty(true); render();
+};
+
+/* ---------- save ---------- */
+function collect(){
+  DATA.config=DATA.config||{};
+  DATA.config.name=$("#cName").value.trim(); DATA.config.nameAr=$("#cNameAr").value.trim();
+  DATA.config.currency=$("#cCur").value.trim(); DATA.config.currencyAr=$("#cCurAr").value.trim();
+  return JSON.stringify(DATA,null,1);
+}
+$("#bSave").onclick=async()=>{
+  const btn=$("#bSave"); const txt=btn.textContent;
+  btn.disabled=true; btn.innerHTML='<span class="spin"></span> Saving…';
+  try{
+    const json=collect();
+    // re-read the sha so a change made elsewhere is not silently overwritten
+    const cur=await getFile(cfg.path);
+    if(cur&&sha&&cur.sha!==sha){
+      if(!confirm("This file changed on GitHub since you loaded it.\n\nSaving now overwrites that change. Continue?")){
+        btn.disabled=false; btn.textContent=txt; return;
+      }
+    }
+    const r=await putFile(cfg.path,b64(json),"Update menu ("+new Date().toISOString().slice(0,16).replace("T"," ")+")",cur?cur.sha:null);
+    sha=r.content.sha; setDirty(false);
+    msg("Saved to <b>"+esc(cfg.owner+"/"+cfg.repo)+"</b>. GitHub Pages usually refreshes within a minute.","s");
+  }catch(e){ msg("Save failed: "+esc(e.message),"e"); }
+  btn.textContent=txt; btn.disabled=false; setDirty(dirty);
+};
+$("#bDownload").onclick=()=>{
+  const a=document.createElement("a");
+  a.href=URL.createObjectURL(new Blob([collect()],{type:"application/json"}));
+  a.download="menu-data.json"; a.click(); URL.revokeObjectURL(a.href);
+};
+$("#bConnect").onclick=async()=>{
+  saveCfg();
+  if(!cfg.owner||!cfg.repo||!cfg.token){ msg("Fill in owner, repository and token first.","e"); return; }
+  try{
+    const r=await gh("");
+    let note="Connected to <b>"+esc(r.full_name)+"</b>.";
+    if(r.private===false) note+=" This repository is <b>public</b>, so anyone can read menu-data.json. That is fine for a menu, but never put anything private in it.";
+    msg(note,"s");
+    await load();
+  }catch(e){ msg("Could not connect: "+esc(e.message)+"<br>Check the owner, repository name, and that the token has Contents: Read and write on this repository.","e"); }
+};
+$("#bForget").onclick=()=>{
+  cfg.token=""; $("#sToken").value="";
+  try{ localStorage.setItem(LS,JSON.stringify(cfg)); }catch(e){}
+  msg("Token removed from this browser.","s"); setDirty(dirty);
+};
+
+/* ---------- wiring ---------- */
+$("#bSettings").onclick=()=>{$("#settings").classList.toggle("hide");$("#cafe").classList.toggle("hide");};
+$("#bAddCat").onclick=()=>openCat(-1);
+$("#bEditCat").onclick=()=>{ if(DATA.categories.length) openCat(cur); };
+$("#bAddItem").onclick=()=>{ if(!DATA.categories.length){alert("Add a category first.");return;} openItem(cur,-1); };
+$("#q").addEventListener("input",renderItems);
+$("#fFilter").addEventListener("change",renderItems);
+["#cName","#cNameAr","#cCur","#cCurAr"].forEach(s=>$(s).addEventListener("input",()=>setDirty(true)));
+addEventListener("keydown",e=>{ if(e.key==="Escape"){ $("#iCancel").click(); $("#kCancel").click(); } });
+
+loadCfg(); setDirty(false); load();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,2114 @@
+{
+ "config": {
+  "name": "GERARD CAFE",
+  "nameAr": "كافيه جيرارد",
+  "currency": "AED",
+  "currencyAr": "د.إ"
+ },
+ "colours": {
+  "espresso": "#241A15",
+  "espresso2": "#31241C",
+  "cream": "#F7F1E7",
+  "cream2": "#EFE5D6",
+  "gold": "#C8973F",
+  "goldDeep": "#8A6614"
+ },
+ "categories": [
+  {
+   "slug": "breakfast",
+   "icon": "egg",
+   "en": "Breakfast",
+   "ar": "الفطور",
+   "items": [
+    {
+     "en": "French Breakfast",
+     "ar": "الفطور الفرنسي",
+     "p": 38,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/718207BC-D2A3-4E9D-9922-D5B30856B6AA.jpg?v=1703618997",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Arabic Breakfast",
+     "ar": "الفطور العربي",
+     "p": 38,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/5E35C359-1B74-4D0F-988D-1EBDB277AB48.jpg?v=1703755371",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Gerard Breakfast",
+     "ar": "فطور جيرارد",
+     "p": 48,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/F5AB3CAF-295A-4E19-B4E4-D3D2B7E01DEB.jpg?v=1703619118",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Gerard's Arabic Breakfast for Two",
+     "ar": "فطور جيرارد العربي لشخصين",
+     "p": 49,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/FullSizeRender_7257392d-566a-4693-bb06-cec157ec778f.jpg?v=1763583360",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Shakshuka",
+     "ar": "شكشوكة",
+     "p": 29,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/4518EE27-85FA-4A71-8E3D-82CC7CF72C4E.jpg?v=1701456806",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Halloumi Zaatar Wrap",
+     "ar": "راب حلوم وزعتر",
+     "p": 30,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/3_19.jpg?v=1697470497",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "French Toast",
+     "ar": "فرنش توست",
+     "p": 32,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/FullSizeRender_80bc6a3d-e3e2-479b-b0bd-72e30458c2b1.jpg?v=1763537826",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Greek Yogurt Granola with Fruit",
+     "ar": "زبادي يوناني وجرانولا مع فواكه",
+     "p": 29,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/FullSizeRender_4e0b0a9a-f05c-4ca3-a762-eb3d4ed9dba3.jpg?v=1763537854",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Grilled Halloumi with Fresh Greens",
+     "ar": "حلوم مشوي مع الخضرة الطازجة",
+     "p": 28,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/6C18516C-04FF-4543-92C4-F319A7E95469.jpg?v=1701611050",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Croissant, Boiled Eggs with Thyme and Cheese",
+     "ar": "كرواسان مع بيض مسلوق وزعتر وجبنة",
+     "p": 26,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/FullSizeRender_e569259b-397d-4796-a134-bdca1a5ae4e0.jpg?v=1763420088",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Manaqesh Zaatar",
+     "ar": "منقوشة زعتر",
+     "p": 12,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/70BF8A4F-AB17-4432-ABC1-25CC5BC065AA.jpg?v=1705774841",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Manaqesh Cheese",
+     "ar": "منقوشة جبنة",
+     "p": 16,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-6010.jpg?v=1705774661",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Omelette Plate",
+     "ar": "صحن أومليت",
+     "p": 20,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/2636BE54-7E9F-481B-93C4-4636575BCC3A.jpg?v=1697546781",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Omelette Plate with Vegetables",
+     "ar": "صحن أومليت مع خضار",
+     "p": 25,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/4D79FA3E-E680-4D2E-8AC3-D86659B221C7.jpg?v=1697546803",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Zaatar Croissant",
+     "ar": "كرواسان زعتر",
+     "p": 15,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/zaatarcrossian12.jpg?v=1697546658",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Croissant with Cheese and Turkey Omelette",
+     "ar": "كرواسان مع أومليت جبنة وتركي",
+     "p": 30,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/cheeseturkeyeggs28.jpg?v=1697447312",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Cheese Croissant",
+     "ar": "كرواسان جبنة",
+     "p": 15,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-2748.webp?v=1697546529",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Almond Croissant",
+     "ar": "كرواسان لوز",
+     "p": 17,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-20231017-WA0003.jpg?v=1697544628",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Plain Croissant",
+     "ar": "كرواسان سادة",
+     "p": 12,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-20231017-WA0001_edit_150091550575242.jpg?v=1697543896",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Pistachio Croissant",
+     "ar": "كرواسان فستق",
+     "p": 28,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/8614EC4D-E1D7-44A6-AA90-DD2B98809FE7.jpg?v=1698148507",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Ferrero Rocher Croissant",
+     "ar": "كرواسان فيريرو روشيه",
+     "p": 29,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-0246.jpg?v=1698170988",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Kinder Croissant",
+     "ar": "كرواسان كيندر",
+     "p": 28,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/9B18A58C-3A1B-4AE3-9DCD-4505EB4E3497.jpg?v=1698148617",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Nutella Croissant",
+     "ar": "كرواسان نوتيلا",
+     "p": 28,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/25C4625E-535E-4439-ADFE-C2512F23B3FC.jpg?v=1698148749",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Sliced Cheese with Tomato, Served with Fries",
+     "ar": "سليس تشيز مع طماطم يقدم مع بطاطا مقلية",
+     "p": 28,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/3_15.jpg?v=1697458361",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Manaqesh Labneh with Vegetables",
+     "ar": "منقوشة لبنة مع خضار",
+     "p": 14,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/1B860A24-4747-4F3F-95B7-E662948770D3.jpg?v=1705775082",
+     "d": "",
+     "dAr": ""
+    }
+   ]
+  },
+  {
+   "slug": "salad",
+   "icon": "leaf",
+   "en": "Salads",
+   "ar": "السلطات",
+   "items": [
+    {
+     "en": "Greek Salad",
+     "ar": "سلطة يونانية",
+     "p": 33,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/FullSizeRender_b5253e8e-9c60-4333-bd6a-3c3dc67778cd.jpg?v=1697551218",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Caesar Salad",
+     "ar": "سلطة سيزر",
+     "p": 35,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-9316.webp?v=1763477942",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Beetroot Salad",
+     "ar": "سلطة شمندر",
+     "p": 38,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/1D375AEF-22CB-4141-961D-64CAD4C1DDB4.jpg?v=1701611215",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Fattoush Salad",
+     "ar": "سلطة فتوش",
+     "p": 29,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/71BEBD76-E2BF-4A6F-87D5-4ACDD2B0FF29.jpg?v=1720979426",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Lebanese Tabbouleh",
+     "ar": "تبولة لبنانية",
+     "p": 26,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/7F4AF4C7-3609-49A9-90F0-5109962C6FA2.jpg?v=1724086762",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Halloumi Salad",
+     "ar": "سلطة حلوم",
+     "p": 36,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/94646503-910F-4FCE-9FEB-17481968CC6E.jpg?v=1701610762",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Mexican Salad with Doritos",
+     "ar": "السلطة المكسيكية بالدوريتوس",
+     "p": 36,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/CFC2DEF8-8DAB-4679-B2F6-3898CF3CAF7F.jpg?v=1704728631",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Quinoa Salad",
+     "ar": "سلطة كينوا",
+     "p": 33,
+     "img": "",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Tuna Salad",
+     "ar": "سلطة تونة",
+     "p": 37,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/tunasalad37.jpg?v=1697297984",
+     "d": "",
+     "dAr": ""
+    }
+   ]
+  },
+  {
+   "slug": "sandwiches-burgers",
+   "icon": "burger",
+   "en": "Sandwiches & Burgers",
+   "ar": "السندويشات والبرغر",
+   "items": [
+    {
+     "en": "Gerard's Cheeseburger",
+     "ar": "جيرارد تشيز برغر",
+     "p": 37,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/FullSizeRender_6ff93dde-6f2b-4b2c-92ab-45de16b60af0.jpg?v=1763583297",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Beef Burger",
+     "ar": "بيف برغر",
+     "p": 35,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/7207D956-45B8-43F7-A1F6-99958462BF03.jpg?v=1703755432",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Double Beef Burger with Eggs",
+     "ar": "دوبل بيف برغر مع بيض",
+     "p": 39,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/32F1ECC3-C421-43D4-842A-926C47EA90B7.jpg?v=1703618317",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Mushroom Beef Burger",
+     "ar": "مشروم بيف برغر",
+     "p": 37,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-9300.png?v=1763418537",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Crispy Chicken Burger",
+     "ar": "كريسبي تشيكن برغر",
+     "p": 35,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/0867FF08-F701-412A-9E7F-3750F0A34A1C.jpg?v=1703618560",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Grilled Chicken Burger with Special Sauce and Fries",
+     "ar": "جريل تشيكن برغر بالصوص الخاص مع بطاطا مقلية",
+     "p": 35,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/CEEC0CD7-C6B6-44F8-AAE6-9F2721F9F2EC.jpg?v=1703618614",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Pizza Beef Burger",
+     "ar": "بيتزا بيف برغر",
+     "p": 37,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/8A59CFDD-D59D-48C3-936A-75C4872583FC.jpg?v=1703618358",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Grilled Chicken",
+     "ar": "دجاج مشوي",
+     "p": 35,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/67A21C33-43D0-4882-9CA6-31AAF364A2E3.jpg?v=1703618397",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Crazy Chicken Crispy",
+     "ar": "كريزي تشيكن كريسبي",
+     "p": 39,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/FullSizeRender_c9d773f6-d9b0-457a-a1e0-94eb814f4e61.jpg?v=1763419452",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Chicken Zinger Wrap",
+     "ar": "راب دجاج زنجر",
+     "p": 36,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-9371.jpg?v=1763583245",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Grilled Chicken Breast, Gerard's Special Marinade",
+     "ar": "قطع صدور دجاج مشوية ومتبلة على طريقة جيرارد الخاصة",
+     "p": 38,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-9303.jpg?v=1763420401",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Chicken Fajita Sandwich",
+     "ar": "ساندويش دجاج فاهيتا",
+     "p": 35,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/E4B46115-24D4-4834-A859-50E00C385C34.jpg?v=1697554165",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Cheese Sandwich",
+     "ar": "ساندويش جبنة",
+     "p": 30,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/3_23.jpg?v=1697556281",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Club Sandwich",
+     "ar": "كلوب ساندويش",
+     "p": 36,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/D936C1F6-327D-472E-88C3-8FC6D6A26CD7.jpg?v=1702648399",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Chicken Zinger 5 Pieces with Potato",
+     "ar": "دجاج زنجر مقرمش 5 قطع مع بطاطا",
+     "p": 29,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-9392.jpg?v=1763720262",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Cordon Bleu with Vegetables",
+     "ar": "كوردون بلو مع خضار",
+     "p": 39,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/3368014B-6619-4154-BAB1-6543C864A856.jpg?v=1704296968",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Potato Plate",
+     "ar": "صحن بطاطا",
+     "p": 17,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/FullSizeRender_64e2364d-4410-468c-b679-6469af6e369c.jpg?v=1763583038",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Fries with Crispy Chicken, Cheese and Dynamite Sauce",
+     "ar": "بطاطا مقلية مع دجاج كريسبي وجبنة وصلصة الديناميت",
+     "p": 35,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/FullSizeRender_b5760803-1ba8-4827-8d3c-8fb362f7302f.jpg?v=1763582601",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Potatoes with Cheetos and Cheese",
+     "ar": "بطاطا مع جبنة وشيتوس",
+     "p": 25,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/FullSizeRender_9b36e773-62ec-4d43-9f68-6c348b6c2ac2.jpg?v=1763582394",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Potatoes with Special Cheese",
+     "ar": "بطاطا مع الجبنة الخاصة",
+     "p": 24,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/FullSizeRender_419a4cb6-262a-48f8-b1ef-c7af5671b2bd.jpg?v=1763582549",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Dynamite Shrimp",
+     "ar": "دينامايت شريمب",
+     "p": 38,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/B3EF870A-EFC3-45C0-BFB0-04C2379A891A.jpg?v=1703618505",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Grilled Shrimp",
+     "ar": "جريل شريمب",
+     "p": 35,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/grilledshrimp35.jpg?v=1697297685",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Turkey and Cheese Sandwich",
+     "ar": "ساندويش تركي وجبنة",
+     "p": 30,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/3_22.jpg?v=1697556151",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Onion Rings",
+     "ar": "حلقات البصل",
+     "p": 21,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/1.jpg?v=1697548569",
+     "d": "",
+     "dAr": ""
+    }
+   ]
+  },
+  {
+   "slug": "pasta-pizza",
+   "icon": "pizza",
+   "en": "Pasta, Pizza & More",
+   "ar": "الباستا والبيتزا",
+   "items": [
+    {
+     "en": "Pasta Pink Sauce",
+     "ar": "باستا بالصوص الوردي",
+     "p": 38,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/7AF9934B-CDC3-4624-A28B-AB2AA1CECB0D.jpg?v=1733249335",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Bolognese",
+     "ar": "بولونيز",
+     "p": 38,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/842355B1-7F6E-4A18-9AD7-AA0061920485.jpg?v=1703618769",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Pesto Pasta",
+     "ar": "باستا بيستو",
+     "p": 49,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/390F3C46-24B4-49E6-87FC-CEA7553975AD.jpg?v=1763583529",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Penne Alfredo",
+     "ar": "بيني ألفريدو",
+     "p": 38,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/pennealfredo38_d937bbd9-d26e-4e35-a098-459d730edaab.jpg?v=1763583553",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Penne Alfredo Shrimp",
+     "ar": "بيني ألفريدو شريمب",
+     "p": 40,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/pennealfredoshrimp38.jpg?v=1697297847",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Penne Arrabbiata",
+     "ar": "بيني أرابياتا",
+     "p": 33,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/8_1.jpg?v=1697450415",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Pizza Margherita, Napoli Style",
+     "ar": "بيتزا مارجريتا نابولي",
+     "p": 34,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/97F621A3-8696-4DB3-8C87-E0FD70911F5E.jpg?v=1703618812",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Pizza Pepperoni, Napoli Style",
+     "ar": "بيتزا بيبروني نابولي",
+     "p": 39,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/6D69F285-39AA-47B8-A66E-C30217BCEA0E.jpg?v=1703618850",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Pizza Vegetables",
+     "ar": "بيتزا خضار",
+     "p": 36,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-9397.jpg?v=1763584650",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Pizza Chicken",
+     "ar": "بيتزا دجاج",
+     "p": 38,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-9396.jpg?v=1763584518",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Sausage Pizza",
+     "ar": "بيتزا سجق",
+     "p": 38,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/49FF8DF8-BE5A-46F0-9F90-AEB22AE5EC32.jpg?v=1700337709",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Pizza Tuna",
+     "ar": "بيتزا تونة",
+     "p": 39,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/download_1.jpg?v=1763583634",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Pizza Shrimp",
+     "ar": "بيتزا شريمب",
+     "p": 41,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/download_2.jpg?v=1697457217",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Mushroom Soup",
+     "ar": "شوربة مشروم",
+     "p": 28,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/84917724-82C6-4C22-9DE8-CD244CD46610.jpg?v=1702544773",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Dynamite Shrimp Dish, 8 Pieces",
+     "ar": "صحن دينامايت شريمب 8 قطع",
+     "p": 35,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/9C30DBB5-110A-479C-B5C9-CD7EC958319F.jpg?v=1703618732",
+     "d": "",
+     "dAr": ""
+    }
+   ]
+  },
+  {
+   "slug": "cake",
+   "icon": "cake",
+   "en": "Cake",
+   "ar": "الكيك",
+   "items": [
+    {
+     "en": "Dolce Tiramisu Cake",
+     "ar": "دولتشي تيراميسو كيك",
+     "p": 29,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/C7CE88F4-51A8-4605-8E27-C01494EEF811.jpg?v=1760619623",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Tiramisu Cake",
+     "ar": "تيراميسو كيك",
+     "p": 24,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/76F9532F-D851-47F7-847F-A9853E0CE9E3.jpg?v=1726484953",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Cookies with Ice Cream",
+     "ar": "كوكيز مع آيس كريم",
+     "p": 28,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/FullSizeRender_cc71e107-3052-4747-b985-965fb076f4ba.jpg?v=1763479032",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Trilece, Turkish Milk Cake",
+     "ar": "تريليتشا كيكة الحليب التركية",
+     "p": 29,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/FullSizeRender_6490709b-b540-4e56-93eb-9fe443fa703a.jpg?v=1763479459",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Pistachio Milk Cake",
+     "ar": "بيستاشيو ميلك كيك",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/2_9.jpg?v=1697549809",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Saffron Milk Cake",
+     "ar": "زعفران ميلك كيك",
+     "p": 29,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/FullSizeRender_e98144be-3d6d-4a50-ac39-e35f1df537f0.jpg?v=1763479337",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Chocolate Brownie with Walnuts",
+     "ar": "براوني شوكولاتة مع الجوز",
+     "p": 23,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/FullSizeRender_f889ffc9-d3b9-41a7-87c6-c88c64d171b2.jpg?v=1763479375",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "London Cake",
+     "ar": "لندن كيك",
+     "p": 28,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-2854.jpg?v=1788279775",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Matilda Cake",
+     "ar": "ماتيلدا كيك",
+     "p": 28,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-0602.webp?v=1772563282",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Peanut Butter Cake",
+     "ar": "كيك زبدة الفول السوداني",
+     "p": 24,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-2756.png?v=1787592299",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Strawberry Sponge Cake",
+     "ar": "كيك اسفنجي بالفراولة",
+     "p": 23,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-2755.png?v=1787591810",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Lotus Biscoff Cake",
+     "ar": "لوتس بيسكوف كيك",
+     "p": 23,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-9343.jpg?v=1763482624",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Raffaello Cake",
+     "ar": "رافاييلو كيك",
+     "p": 22,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/FullSizeRender_91e18489-ad94-4bb5-b792-b3a091f026f2.jpg?v=1763487872",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Ice Cream with Croissant and Belgian Pistachio Chocolate Sauce",
+     "ar": "آيس كريم مع كرواسان وصوص الشوكولاتة البلجيكية بالفستق",
+     "p": 25,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-9359.jpg?v=1763484280",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Molten Cake",
+     "ar": "مولتن كيك",
+     "p": 29,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-9333.jpg?v=1763480316",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Gerard Signature Cake, Nutella, Pistachio, Ferrero Rocher, Lotus",
+     "ar": "جيرارد سيجنيتشر كيك، نوتيلا، بيستاشيو، فيريرو روشيه، لوتس",
+     "p": 29,
+     "img": "",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Crème Caramel",
+     "ar": "كريم كراميل",
+     "p": 16,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/FullSizeRender_cfe923fd-b3f3-431a-980a-c7a8b0c36954.jpg?v=1763479190",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Lazy Cake Roll",
+     "ar": "ليزي كيك رول",
+     "p": 24,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/FullSizeRender_f0b498ec-1bc7-47a0-b6d2-55e91c64b8bd.jpg?v=1763479148",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Pistachio Layer Cake",
+     "ar": "كيك طبقات الفستق",
+     "p": 23,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/9DBB5253-DEA8-4945-A48A-5F3E798BCE2A.webp?v=1738401644",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Chocolate Ball",
+     "ar": "كرة الشوكولاتة",
+     "p": 7,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/FullSizeRender_b9b8ddde-f7c6-4c62-a475-2797b034db8b.jpg?v=1763478842",
+     "d": "",
+     "dAr": ""
+    }
+   ]
+  },
+  {
+   "slug": "cheesecake",
+   "icon": "slice",
+   "en": "Cheesecake",
+   "ar": "التشيز كيك",
+   "items": [
+    {
+     "en": "San Sebastian Cheesecake",
+     "ar": "سان سباستيان تشيز كيك",
+     "p": 29,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/FullSizeRender_4c450f07-17b9-4af1-a876-a5bd1772c10b.jpg?v=1763482488",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Dolce Cheesecake",
+     "ar": "دولتشي تشيز كيك",
+     "p": 25,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/7A187857-5FBD-4D55-8827-7F10DFC9C70E.jpg?v=1769796124",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Strawberry Cheesecake",
+     "ar": "تشيز كيك فراولة",
+     "p": 22,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-9361.jpg?v=1763487132",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Blueberry Cheesecake",
+     "ar": "تشيز كيك بلوبيري",
+     "p": 22,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-9365.jpg?v=1763487170",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Roseberry Cheesecake",
+     "ar": "تشيز كيك روزبيري",
+     "p": 22,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/98BAB855-9482-4FCD-A522-D69B676391BB.jpg?v=1741545210",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Oreo Cheesecake",
+     "ar": "تشيز كيك أوريو",
+     "p": 22,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/43B0B88B-D65F-4036-98BE-1F35890657E7.jpg?v=1726484756",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Pistachio Cheesecake",
+     "ar": "تشيز كيك فستق",
+     "p": 24,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/25397C08-EC22-4BA1-9B90-42F9481786B3.jpg?v=1726484732",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Kinder Cheesecake",
+     "ar": "تشيز كيك كيندر",
+     "p": 22,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/4904CE4A-4B2B-4193-A525-54A62F78C174.jpg?v=1726484706",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Lotus Cheesecake",
+     "ar": "تشيز كيك لوتس",
+     "p": 22,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/6FEF0C44-BA0E-4728-A4F3-B1BBDD83BA9F.jpg?v=1701119812",
+     "d": "",
+     "dAr": ""
+    }
+   ]
+  },
+  {
+   "slug": "cookies",
+   "icon": "cookie",
+   "en": "Cookies",
+   "ar": "الكوكيز",
+   "items": [
+    {
+     "en": "Cookies with Ice Cream",
+     "ar": "كوكيز مع آيس كريم",
+     "p": 28,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/FullSizeRender_cc71e107-3052-4747-b985-965fb076f4ba.jpg?v=1763479032",
+     "d": "",
+     "dAr": ""
+    }
+   ]
+  },
+  {
+   "slug": "pancake",
+   "icon": "pancake",
+   "en": "Pancake, Waffle & Crepe",
+   "ar": "البان كيك والوافل والكريب",
+   "items": [
+    {
+     "en": "Fettuccine Crepe",
+     "ar": "كريب فيتوتشيني",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/E60BF665-138F-4F8F-84D7-641344B72746.jpg?v=1729703375",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Dubai Kunafa Crepe",
+     "ar": "كريب كنافة دبي",
+     "p": 29,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/ABA9424B-17F0-499A-8430-6D359D900ADD.jpg?v=1724502762",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Pancake, Nutella, Lotus, Kinder or Pistachio",
+     "ar": "بان كيك، نوتيلا، لوتس، كيندر أو بيستاشيو",
+     "p": 24,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/C5811C93-D684-4F7A-A8C4-F589E289D812.jpg?v=1701797107",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Mini Pancake, Nutella, Lotus, Kinder or Pistachio",
+     "ar": "ميني بان كيك، نوتيلا، لوتس، كيندر أو بيستاشيو",
+     "p": 19,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/pancakenutella17.jpg?v=1697180599",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Crepe, Nutella, Kinder, Lotus or Pistachio",
+     "ar": "كريب، نوتيلا، كيندر، لوتس أو بيستاشيو",
+     "p": 25,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-9370.jpg?v=1763489527",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Nutella Crepe with Strawberry and Banana",
+     "ar": "كريب نوتيلا مع فراولة وموز",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-9366.jpg?v=1763487443",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Nutella Ice Cream Crepe",
+     "ar": "كريب نوتيلا آيس كريم",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/crepenutellaicecream27.jpg?v=1697181406",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Waffle, Nutella, Lotus, Kinder or Pistachio",
+     "ar": "وافل، نوتيلا، لوتس، كيندر أو بيستاشيو",
+     "p": 25,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-9367.jpg?v=1763487476",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Cheese and Honey Crepe",
+     "ar": "كريب جبنة وعسل",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/FullSizeRender_37e4350d-ba05-49b7-8b53-6629fa8df3c9.jpg?v=1702651695",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Tamari Kaak",
+     "ar": "تماري كعك",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/FF595335-D5F0-43ED-B5B8-40A88596D699.jpg?v=1781724270",
+     "d": "",
+     "dAr": ""
+    }
+   ]
+  },
+  {
+   "slug": "kunafa",
+   "icon": "kunafa",
+   "en": "Kunafa",
+   "ar": "الكنافة",
+   "items": [
+    {
+     "en": "Kunafa with Cream",
+     "ar": "كنافة بالقشطة",
+     "p": 24,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/D65E0DDC-670C-4AE2-883C-EDA28DB28E7B.jpg?v=1726484287",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Kunafa Cheese",
+     "ar": "كنافة جبنة",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/7422FBD9-C327-4A43-92EB-79A08A84CA26.jpg?v=1726484265",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Kunafa Pistachio",
+     "ar": "كنافة بيستاشيو",
+     "p": 32,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-9448.webp?v=1763721074",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Kunafa Nutella",
+     "ar": "كنافة نوتيلا",
+     "p": 32,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-9449.webp?v=1763721246",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Kunafa Kinder",
+     "ar": "كنافة كيندر",
+     "p": 32,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/640DBBE0-6EB5-4CAD-8617-100228AF59CB.jpg?v=1726484246",
+     "d": "",
+     "dAr": ""
+    }
+   ]
+  },
+  {
+   "slug": "acai-ice-cream",
+   "icon": "icecream",
+   "en": "Açaí & Ice Cream",
+   "ar": "الأساي والآيس كريم",
+   "items": [
+    {
+     "en": "Açaí with Peanut Butter and Granola",
+     "ar": "أساي مع زبدة الفول السوداني والجرانولا",
+     "p": 38,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/586203E6-92DF-4C62-A1A6-60BCCF60446D.jpg?v=1763585070",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Açaí Fruits",
+     "ar": "أساي بالفواكه",
+     "p": 33,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/FE5CB9B6-5F2D-4412-B9B7-11FEE6F3F536.jpg?v=1763584981",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Açaí Nutella",
+     "ar": "أساي نوتيلا",
+     "p": 36,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/D9B9882F-2524-4E91-A155-CFE0966A578A.jpg?v=1763584907",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Pistachio Kunafa Ice Cream",
+     "ar": "آيس كريم كنافة بيستاشيو",
+     "p": 20,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/2370FC65-7D29-4E76-BAF7-E6FDEFD5D85B.jpg?v=1763585020",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Gelato Tiramisu",
+     "ar": "جيلاتو تيراميسو",
+     "p": 23,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/C2EF86B5-98A8-4C16-9D89-C04790976EB7.jpg?v=1722526036",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Arabic Ice Cream with Cream and Pistachios",
+     "ar": "آيس كريم عربي بالقشطة والفستق",
+     "p": 38,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/3BD9F31F-AA82-457E-8FBF-7D94FDF71681.jpg?v=1715614326",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Pistachio Ice Cream",
+     "ar": "آيس كريم فستق",
+     "p": 17,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/Screenshot_20240529_180125_com.android.chrome_edit_159610603593644.jpg?v=1716991722",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Lemon Ice Cream",
+     "ar": "آيس كريم ليمون",
+     "p": 17,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/Screenshot_20240529_180020_com.android.chrome_edit_159636388289155.jpg?v=1763585252",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Strawberry Ice Cream",
+     "ar": "آيس كريم فراولة",
+     "p": 17,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/1_3.jpg?v=1697548322",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Chocolate Ice Cream",
+     "ar": "آيس كريم شوكولاتة",
+     "p": 17,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/1_6.jpg?v=1697548256",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Vanilla Ice Cream",
+     "ar": "آيس كريم فانيليا",
+     "p": 17,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/icecreamvanilla12.jpg?v=1697178380",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Mango Ice Cream",
+     "ar": "آيس كريم مانجو",
+     "p": 17,
+     "img": "",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Nescafe Ice Cream",
+     "ar": "آيس كريم نسكافيه",
+     "p": 19,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/FullSizeRender_6ff2dd39-6f12-44f2-8559-f1a96f04d4ce.jpg?v=1764841379",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Passion Fruit Ice Cream",
+     "ar": "آيس كريم باشن فروت",
+     "p": 17,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/FullSizeRender_7d966d39-f171-430d-b6c6-187abb33f90e.jpg?v=1764841513",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Snickers Ice Cream",
+     "ar": "آيس كريم سنيكرز",
+     "p": 19,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/FullSizeRender_bd8cec68-1723-4584-9556-ef358d8256e3.jpg?v=1764841855",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Croquant Ice Cream",
+     "ar": "آيس كريم كروكان",
+     "p": 19,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/FullSizeRender_72f6450d-7d23-40a6-9dae-7a90d6fcad01.jpg?v=1764841969",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Oreo Ice Cream",
+     "ar": "آيس كريم أوريو",
+     "p": 19,
+     "img": "",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Roseberry Ice Cream",
+     "ar": "آيس كريم روزبيري",
+     "p": 17,
+     "img": "",
+     "d": "",
+     "dAr": ""
+    }
+   ]
+  },
+  {
+   "slug": "fruit-salad",
+   "icon": "fruit",
+   "en": "Fruit Salad",
+   "ar": "سلطة الفواكه",
+   "items": [
+    {
+     "en": "Fruit Salad with Ice Cream",
+     "ar": "سلطة فواكه مع آيس كريم",
+     "p": 29,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/D9A40790-8ED7-4798-928A-61D44A17B411.jpg?v=1726484133",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Fruit Salad with Nutella",
+     "ar": "سلطة فواكه مع نوتيلا",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/E816E436-0B2B-4ECC-8C87-DFEE9EF65FE8.jpg?v=1726484158",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Fruit Salad",
+     "ar": "سلطة فواكه",
+     "p": 25,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/CAA9DE07-DFC0-43A0-9276-A4F419F98495.jpg?v=1726484185",
+     "d": "",
+     "dAr": ""
+    }
+   ]
+  },
+  {
+   "slug": "milk-shake",
+   "icon": "shake",
+   "en": "Milkshake",
+   "ar": "الميلك شيك",
+   "items": [
+    {
+     "en": "KitKat Milkshake",
+     "ar": "ميلك شيك كيت كات",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/F8B21BA4-5561-49D0-BD31-DC423030D759.jpg?v=1726483981",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Strawberry Milkshake",
+     "ar": "ميلك شيك فراولة",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/A7F96A52-BBA5-4AB6-9A6B-CB94F029C2EB.jpg?v=1726483946",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Blueberry Milkshake",
+     "ar": "ميلك شيك بلوبيري",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/2_11.jpg?v=1697555093",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Oreo Milkshake",
+     "ar": "ميلك شيك أوريو",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/2_8.jpg?v=1697549953",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Vanilla Milkshake",
+     "ar": "ميلك شيك فانيليا",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/2_6_fe1da4de-6b6f-4cf4-a7bd-401e1f91df35.jpg?v=1697550159",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Pistachio Milkshake",
+     "ar": "ميلك شيك بيستاشيو",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/2_9.jpg?v=1697549809",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Chocolate Milkshake",
+     "ar": "ميلك شيك شوكولاتة",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/2_1_1067d3bc-8dc3-4260-b4a2-0688882552a6.jpg?v=1697613289",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Lotus Milkshake",
+     "ar": "ميلك شيك لوتس",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/milkshakelotus27.jpg?v=1697181097",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Caramel Milkshake",
+     "ar": "ميلك شيك كراميل",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/milkshakecarame27l.jpg?v=1697181054",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Banana Milkshake",
+     "ar": "ميلك شيك موز",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/2_12.jpg?v=1697550190",
+     "d": "",
+     "dAr": ""
+    }
+   ]
+  },
+  {
+   "slug": "smothies",
+   "icon": "smoothie",
+   "en": "Smoothies",
+   "ar": "السموذي",
+   "items": [
+    {
+     "en": "Peach Smoothie",
+     "ar": "سموذي خوخ",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/DDA70572-6C92-4457-B773-45F0D3D86E0D.jpg?v=1697552494",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Strawberry Smoothie",
+     "ar": "سموذي فراولة",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/3B8FA800-D3EC-4DB8-A792-9E2EE7545F08.jpg?v=1697553454",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Acqua Panna Water 500ml",
+     "ar": "مياه أكوا بانا 500 مل",
+     "p": 8,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/7EC62E30-42AD-4184-8CE5-833059864247.webp?v=1763585726",
+     "d": "",
+     "dAr": ""
+    }
+   ]
+  },
+  {
+   "slug": "mojito",
+   "icon": "mojito",
+   "en": "Mojito",
+   "ar": "الموهيتو",
+   "items": [
+    {
+     "en": "Passion Fruit Mojito",
+     "ar": "موهيتو باشن فروت",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-9401.jpg?v=1763721640",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Lemon and Mint Mojito",
+     "ar": "موهيتو ليمون ونعناع",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-9400.jpg?v=1763721728",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Strawberry Mojito",
+     "ar": "موهيتو فراولة",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-9399.jpg?v=1763721475",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Blueberry Mojito",
+     "ar": "موهيتو بلوبيري",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/B9C9BE12-256A-4E0D-BD08-C3E54E386653.jpg?v=1763721991",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Ginger Snap Mojito",
+     "ar": "موهيتو جينجر سناب",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/7_10.jpg?v=1697448046",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Dragon Mojito",
+     "ar": "موهيتو دراجون",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/7_11.jpg?v=1697448178",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Roseberry Mojito",
+     "ar": "موهيتو روزبيري",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/107FB478-473B-4B28-B733-85BFBEA18FC4.jpg?v=1763586641",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Blue Ocean Mojito",
+     "ar": "موهيتو بلو أوشن",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/FullSizeRender_03769649-8689-4938-8575-00494b4d729c.jpg?v=1764844397",
+     "d": "",
+     "dAr": ""
+    }
+   ]
+  },
+  {
+   "slug": "cold-drinks",
+   "icon": "frappe",
+   "en": "Frappe",
+   "ar": "الفرابيه",
+   "items": [
+    {
+     "en": "Mango Frappe",
+     "ar": "فرابيه مانجو",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-20231017-WA0008.jpg?v=1697550730",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Pistachio Frappe",
+     "ar": "فرابيه بيستاشيو",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-9444.jpg?v=1763719862",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Chocolate Frappe",
+     "ar": "فرابيه شوكولاتة",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/252627BD-3E29-4A40-9634-63B75F180637.jpg?v=1697551152",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Caramel Frappe",
+     "ar": "فرابيه كراميل",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-9446.jpg?v=1763720503",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Vanilla Frappe",
+     "ar": "فرابيه فانيليا",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-9447.jpg?v=1763720654",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Romango Frappe",
+     "ar": "فرابيه رومانجو",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-9443.jpg?v=1763719762",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Martilo Frappe",
+     "ar": "فرابيه مارتيلو",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-9445.jpg?v=1763720363",
+     "d": "",
+     "dAr": ""
+    }
+   ]
+  },
+  {
+   "slug": "juices",
+   "icon": "juice",
+   "en": "Fresh Juices",
+   "ar": "العصائر الطازجة",
+   "items": [
+    {
+     "en": "Gerard's Cocktail",
+     "ar": "كوكتيل جيرارد",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-9576.jpg?v=1764599796",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Layered Cocktail",
+     "ar": "كوكتيل طبقات",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-9575.jpg?v=1764599455",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Romando",
+     "ar": "روماندو",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-9574.jpg?v=1764598312",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Pina Colada",
+     "ar": "بينا كولادا",
+     "p": 28,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/676A122C-3390-4ADD-B6FD-998994D82F2A.jpg?v=1720027918",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Signature Cocktail",
+     "ar": "الكوكتيل المميز",
+     "p": 26,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/A8CC4E49-BD77-40A8-8A7D-25E2A6097DB5.jpg?v=1764602652",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Avocado",
+     "ar": "أفوكادو",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/4_4.jpg?v=1697439858",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Carrot with Orange",
+     "ar": "جزر مع برتقال",
+     "p": 25,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/4_2_6d63286f-4dbd-4b3c-ae2b-ad4d2d487291.jpg?v=1697444552",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Carrot Juice",
+     "ar": "عصير جزر",
+     "p": 23,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/4_2.jpg?v=1697444521",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Mango Juice",
+     "ar": "عصير مانجو",
+     "p": 23,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/CD01AE38-2546-4C79-B89F-7375EAA1AAE6.jpg?v=1763589217",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Fresh Orange Juice",
+     "ar": "عصير برتقال طازج",
+     "p": 23,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-9415.jpg?v=1763588681",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Kiwi Juice",
+     "ar": "عصير كيوي",
+     "p": 22,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/4_5.jpg?v=1697448730",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Pineapple Juice",
+     "ar": "عصير أناناس",
+     "p": 23,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/pineapple22.jpg?v=1697178847",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Fresh Banana Juice",
+     "ar": "عصير موز طازج",
+     "p": 23,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/4_3.jpg?v=1697439930",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Green Apple Juice",
+     "ar": "عصير تفاح أخضر",
+     "p": 25,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/4_7.jpg?v=1697448796",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Refreshing Lemon and Mint Juice",
+     "ar": "عصير ليمون ونعناع منعش",
+     "p": 23,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/BB5FDAE7-6CD6-4281-9771-7FB18C8D6839.jpg?v=1763588958",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Lemon Juice",
+     "ar": "عصير ليمون",
+     "p": 23,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/FullSizeRender_c702f67a-7a16-4c54-8822-903f3756f3e0.jpg?v=1763589157",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Watermelon Juice",
+     "ar": "عصير بطيخ",
+     "p": 22,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/59462300-B482-49D2-82CE-5BA2BBC069CA.jpg?v=1763588844",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Fresh Strawberry Juice",
+     "ar": "عصير فراولة طازج",
+     "p": 23,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-9414.jpg?v=1763588821",
+     "d": "",
+     "dAr": ""
+    }
+   ]
+  },
+  {
+   "slug": "bubble-tea",
+   "icon": "bubble",
+   "en": "Bubble Tea",
+   "ar": "بابل تي",
+   "items": [
+    {
+     "en": "Mango Bubble Tea",
+     "ar": "بابل تي مانجو",
+     "p": 22,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/80B28D2B-9280-42AB-9FC5-E0EACF83EF00.jpg?v=1697449165",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Chocolate Bubble Tea",
+     "ar": "بابل تي شوكولاتة",
+     "p": 22,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/362AF48E-6CAC-467B-A07E-F91D56CF140D.jpg?v=1763720845",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Vanilla Bubble Tea",
+     "ar": "بابل تي فانيليا",
+     "p": 22,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/8B16E686-8A82-4552-B156-686E4D5F82E9.jpg?v=1697449214",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Matcha Bubble Tea",
+     "ar": "بابل تي ماتشا",
+     "p": 22,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/17D90A17-5A54-46C2-8038-1A482BDB69F9.jpg?v=1697449270",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Taro Bubble Tea",
+     "ar": "بابل تي تارو",
+     "p": 22,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-20231017-WA0009.jpg?v=1763589313",
+     "d": "",
+     "dAr": ""
+    }
+   ]
+  },
+  {
+   "slug": "ice-coffee",
+   "icon": "icecoffee",
+   "en": "Cold Coffee",
+   "ar": "القهوة الباردة",
+   "items": [
+    {
+     "en": "Lemon Iced Tea",
+     "ar": "شاي مثلج بالليمون",
+     "p": 23,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/AF6172FA-A171-4423-8F23-C1F8CAC5C870.jpg?v=1726493962",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Peach Iced Tea",
+     "ar": "شاي مثلج بالخوخ",
+     "p": 23,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/0EF69986-768A-44EF-A0E9-3F60B6CD6409.jpg?v=1726485091",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Iced Shaken White Mocha",
+     "ar": "آيس شيكن وايت موكا",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/BC40F671-C127-4C79-8EB6-B3C27A3E2346.jpg?v=1763589616",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Iced Pistachio Latte",
+     "ar": "آيس لاتيه بيستاشيو",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/09125E30-1727-4DF4-B318-0C8E1D7ABF73.jpg?v=1703618024",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Iced Latte Cream",
+     "ar": "آيس لاتيه كريمة",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/5E1838CD-C99C-49EC-87B4-60F523B8D00D.jpg?v=1703618223",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Iced Caramel Latte",
+     "ar": "آيس كراميل لاتيه",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/33E529A3-F5DC-497E-9BFC-E3F449A1800D.jpg?v=1763589963",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Iced Rose Latte",
+     "ar": "آيس روز لاتيه",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/icedroselatte27.jpg?v=1697179991",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Iced Spanish Latte",
+     "ar": "آيس سبانش لاتيه",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/icespanishlatte27.jpg?v=1697180125",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Iced Matcha Latte",
+     "ar": "آيس ماتشا لاتيه",
+     "p": 28,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-20240709-WA0000.jpg?v=1720526185",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Iced Shaken",
+     "ar": "آيس شيكن",
+     "p": 24,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/iceshaken.jpg?v=1697180082",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Iced Toffee Nuts",
+     "ar": "آيس توفي ناتس",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/icedtoffeenuts2.jpg?v=1697546960",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Slush Cappuccino",
+     "ar": "سلاش كابتشينو",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/62E41A48-CF48-4A8D-958E-7283FB033C18.jpg?v=1763590082",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Iced Americano",
+     "ar": "آيس أمريكانو",
+     "p": 23,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/iceamericano25.jpg?v=1697179812",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Iced Three Colour",
+     "ar": "آيس ثري كلر",
+     "p": 25,
+     "img": "",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Iced Latte",
+     "ar": "آيس لاتيه",
+     "p": 23,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/9A6DA1D7-7A68-47E5-BDCA-C0632C85845E.jpg?v=1697467867",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Iced Tiramisu Latte",
+     "ar": "آيس لاتيه تيراميسو",
+     "p": 27,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/5E1838CD-C99C-49EC-87B4-60F523B8D00D.jpg?v=1703618223",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Acqua Panna Water 500ml",
+     "ar": "مياه أكوا بانا 500 مل",
+     "p": 8,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/7EC62E30-42AD-4184-8CE5-833059864247.webp?v=1763585726",
+     "d": "",
+     "dAr": ""
+    }
+   ]
+  },
+  {
+   "slug": "coffee",
+   "icon": "coffee",
+   "en": "Hot Drinks",
+   "ar": "المشروبات الساخنة",
+   "items": [
+    {
+     "en": "Turkish Coffee",
+     "ar": "قهوة تركية",
+     "p": 18,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/284DC3C3-57B7-4C05-8E90-08D24F853D0E.jpg?v=1726483473",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Spanish Latte",
+     "ar": "سبانش لاتيه",
+     "p": 22,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/D46E91EA-17EC-4807-B1A5-B28D37CFC93D.jpg?v=1726483427",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Latte",
+     "ar": "لاتيه",
+     "p": 18,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/327A1C95-B5B4-4AE1-AE38-50A470F55B60.jpg?v=1763590427",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Cappuccino",
+     "ar": "كابتشينو",
+     "p": 18,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-9418.jpg?v=1763590459",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Macchiato",
+     "ar": "ماكياتو",
+     "p": 18,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-9418.jpg?v=1763590459",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Americano",
+     "ar": "أمريكانو",
+     "p": 19,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/americano19.jpg?v=1697179020",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Cardamom Cappuccino",
+     "ar": "كابتشينو بالهيل",
+     "p": 22,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/8CEA22AF-F560-4505-85D1-D3A9A2DA3882.jpg?v=1763590372",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Cinnamon Cappuccino",
+     "ar": "كابتشينو بالقرفة",
+     "p": 22,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/cinamoncappuccino22.jpg?v=1697446579",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Saffron Cappuccino",
+     "ar": "كابتشينو بالزعفران",
+     "p": 23,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/A0AECF0B-55C0-40E0-B245-FC4B7C828863.jpg?v=1763590290",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Single Espresso",
+     "ar": "إسبريسو سنجل",
+     "p": 16,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-9421.webp?v=1763592263",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Double Espresso",
+     "ar": "إسبريسو دوبل",
+     "p": 20,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/3CF1E7E8-38C1-4B89-A0AA-C1F2384B9C4C.jpg?v=1697571711",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Flat White",
+     "ar": "فلات وايت",
+     "p": 22,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/flatwhite2.jpg?v=1697179214",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Arabic and Saudi Coffee, Small",
+     "ar": "قهوة عربية وسعودية، حجم صغير",
+     "p": 22,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/0DD53939-7A54-4728-876B-E4FACFC217B0.png?v=1702748568",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Arabic and Saudi Coffee, Large",
+     "ar": "قهوة عربية وسعودية، حجم كبير",
+     "p": 25,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/B6FCCAA2-DDF6-446C-BA79-8D0BCB47C0BF.png?v=1702916266",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Tiramisu Hot Chocolate",
+     "ar": "تيراميسو هوت شوكولاتة",
+     "p": 26,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-9791.jpg?v=1766149956",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Hot Chocolate",
+     "ar": "هوت شوكولاتة",
+     "p": 23,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/54F927D4-69FA-458C-8983-8CB5103D2766.jpg?v=1763591526",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Mate Drink",
+     "ar": "مشروب المتة",
+     "p": 15,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-9420.webp?v=1763590813",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Herbal Tea",
+     "ar": "زهورات",
+     "p": 15,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/4090FEC4-E2FD-4010-8BD6-C1E81849DB21.jpg?v=1702145743",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Black Tea",
+     "ar": "شاي أحمر",
+     "p": 13,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/2023-10-16_17.13.04_7e8e94bd.jpg?v=1697470144",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Green Tea",
+     "ar": "شاي أخضر",
+     "p": 13,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/2023-10-16_17.12.51_ff862ede.jpg?v=1697470118",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Moroccan Tea",
+     "ar": "شاي مغربي",
+     "p": 19,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/6DAA3A5B-74A6-436A-9CFB-FC6AB1B694AD.jpg?v=1726483343",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Decaf",
+     "ar": "قهوة منزوعة الكافيين",
+     "p": 18,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-3945.jpg?v=1699709349",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Sahlab",
+     "ar": "سحلب",
+     "p": 22,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/Sahalab25.jpg?v=1697545609",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Hot Toffee Nuts",
+     "ar": "توفي ناتس ساخن",
+     "p": 25,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/2DEB642E-C9EB-40B8-B321-70BF4DD5E986.jpg?v=1763592160",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Ginger Shot",
+     "ar": "جينجر شوت",
+     "p": 18,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/4764DC22-323C-41B9-AC8A-CA5D5DC3727F.jpg?v=1697467327",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Hot Cider",
+     "ar": "سيدر ساخن",
+     "p": 22,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/hotceder22.jpg?v=1697297772",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "French Coffee",
+     "ar": "فرنش كوفي",
+     "p": 18,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/52868553-EEDE-4264-B9E3-A33D7A4C8FF7.jpg?v=1697464536",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "French Vanilla Latte",
+     "ar": "فرنش فانيليا لاتيه",
+     "p": 23,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/9270F178-4EE9-4240-88FB-11768F121D81.jpg?v=1697464643",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Cortado",
+     "ar": "كورتادو",
+     "p": 22,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/FCCBF267-47B1-4CF6-94C5-356FA73DFFFE.jpg?v=1763590324",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Piccolo",
+     "ar": "بيكولو",
+     "p": 18,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/0F4A2833-AE97-4481-A2C1-FB4678311456.jpg?v=1703618913",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Vanilla Latte",
+     "ar": "لاتيه فانيليا",
+     "p": 22,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/653880C4-AC61-43AA-B4FF-2DC79D83FC9F.jpg?v=1726483569",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Affogato",
+     "ar": "أفوجاتو",
+     "p": 25,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/affogatto25aed.jpg?v=1697179001",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Nescafe",
+     "ar": "نسكافيه",
+     "p": 16,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/FB3AADEB-9EFB-402C-A21F-0D95A9494E60.jpg?v=1726483311",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Matcha Latte",
+     "ar": "ماتشا لاتيه",
+     "p": 25,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/IMG-20240709-WA0001.jpg?v=1763590212",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Three Colour Coffee",
+     "ar": "قهوة ثري كلر",
+     "p": 18,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/047338CF-D9BA-4BEE-8058-441E9B420607.jpg?v=1763592218",
+     "d": "",
+     "dAr": ""
+    },
+    {
+     "en": "Tiramisu Latte",
+     "ar": "لاتيه تيراميسو",
+     "p": 25,
+     "img": "https://cdn.shopify.com/s/files/1/0668/2669/8997/files/327A1C95-B5B4-4AE1-AE38-50A470F55B60.jpg?v=1763590427",
+     "d": "",
+     "dAr": ""
+    }
+   ]
+  }
+ ]
+}
